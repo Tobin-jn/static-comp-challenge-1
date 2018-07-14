@@ -142,7 +142,7 @@ button {
   visibility: hidden;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
   .wrapper {
     display: grid;
@@ -202,7 +202,7 @@ button {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   
   .wrapper {
      display: grid;
@@ -257,6 +257,71 @@ button {
 
   .nine-empty {
     visibility: hidden;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+  
+  .wrapper {
+     display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  }
+
+   .one-istanbul-header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .two-visitor-info {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  
+  .picture {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+  }
+  
+  .three-hotels {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+
+  .four-restaurants {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+
+  .five-museums {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+  }
+
+  .six-attractions {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+  }
+
+  .seven-excursions {
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+  }
+
+  .eight-history {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+  }
+
+  .nine-empty {
+    visibility: visible;
+    grid-column: 2 / 3;
+    grid-row: 8/9;
+    background-color: red;
   }
 
 }
