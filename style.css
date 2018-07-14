@@ -1,55 +1,67 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  
+  font-family: 'Cardo', serif;
 
 }
 
 h1 {
-    font-size: 1.3rem;
-    margin-top: 20px;
+       font-size: 2.2rem;
+    margin-top: 53px;
     margin-bottom: 20px;
     /* margin-right: 28px; */
-    padding-left: 28px;
+    padding-left: 37px;
     text-transform: uppercase;
     color: #FFF;
+    font-family: 'Cardo', serif;
 }
 
+
 h2 {
-  text-align: center;
-      font-size: .8em;
+      text-align: center;
+      font-size: 1em;
       color: white;
       text-transform: uppercase;
+      font-family: 'Cardo', serif;
 }
 
 p {
-      color: #FFFFFF;
-    font-size: 1rem;
+        color: #FFFFFF;
+    font-size: 1.3rem;
     margin-top: 17px;
     margin-bottom: 15px;
     /* margin-right: 28px; */
     padding-left: 28px;
+    font-family: 'Cardo', serif;
+    line-height: 0.9em;
 }
 
 button {
     /* margin-left: 40px; */
-    font-family: inherit;
+     text-transform: uppercase;
+    /* margin-left: 40px; */
+    font-family: 'Cardo', serif;
     font-size: 100%;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background: #1E88E5;
     color: #FFFFFF;
     font-family: inherit;
     font-size: 1rem;
     line-height: 1.5;
     white-space: nowrap;
-    padding: 0.6rem 1.7rem;
+    
     cursor: pointer;
 }
 .map {
   margin-left: 28px;
+  padding: 1rem 3.2rem;
+
 }
 .weather {
-  margin-left: 14px;
-}
+      margin-left: 14px;
+    padding: 1rem 1.7rem;
+  }
 
 
 .wrapper {
@@ -78,6 +90,16 @@ button {
   grid-column: 4 / 6;
   grid-row: 1 / 4;
   background-image: url("images/Placeholder.png")
+  background-position: center center;
+}
+
+.pic-menu
+{
+  display: block;
+} 
+.left,
+.right {
+  display: inline-block;
 }
 
 .three-hotels {
@@ -126,14 +148,15 @@ button {
 .icon-attractions,
 .icon-excursions,
 .icon-history {
-    display: block;
-    margin: 80px auto 10px;
+        display: block;
+    margin: 105px auto 10px;
 }
 
 .picture {
   background-image: url("images/istanbul.jpg");
   /*background-repeat: no-repeat;*/
   background-position: center center
+  background-repeat: no-repeat;
    width: 100%;
   height: auto;
 }
