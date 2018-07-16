@@ -1,61 +1,74 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  font-family: 'Cardo', serif;
 
 }
 
 h1 {
-    font-size: 1.3rem;
-    margin-top: 20px;
+       font-size: 2.2rem;
+    margin-top: 53px;
     margin-bottom: 20px;
     /* margin-right: 28px; */
-    padding-left: 28px;
+    padding-left: 37px;
     text-transform: uppercase;
     color: #FFF;
+    font-family: 'Cardo', serif;
 }
 
+
 h2 {
-  text-align: center;
-      font-size: .8em;
+      text-align: center;
+      font-size: 1em;
       color: white;
       text-transform: uppercase;
+      font-family: 'Cardo', serif;
 }
 
 p {
-      color: #FFFFFF;
-    font-size: 1rem;
+        color: #FFFFFF;
+    font-size: 1.3rem;
     margin-top: 17px;
     margin-bottom: 15px;
     /* margin-right: 28px; */
     padding-left: 28px;
+    font-family: 'Cardo', serif;
+    line-height: 0.9em;
 }
 
 button {
     /* margin-left: 40px; */
-    font-family: inherit;
+     text-transform: uppercase;
+    /* margin-left: 40px; */
+    font-family: 'Cardo', serif;
     font-size: 100%;
-    border: 1px solid #FFFFFF;
-    background: #1E88E5;
+    border: 2px solid #FFFFFF;
+    background: #7E6F5C;
     color: #FFFFFF;
     font-family: inherit;
     font-size: 1rem;
     line-height: 1.5;
     white-space: nowrap;
-    padding: 0.6rem 1.7rem;
+    
     cursor: pointer;
 }
 .map {
   margin-left: 28px;
+  padding: 1rem 3.2rem;
+
 }
 .weather {
-  margin-left: 14px;
-}
+      margin-left: 14px;
+    padding: 1rem 1.7rem;
+  }
 
 
 .wrapper {
+  margin: 0px;
   display: grid;
+
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 300px);
+  grid-template-rows: repeat(3, 320px);
   align-items: stretch;
 }
 
@@ -69,7 +82,7 @@ button {
   grid-column: 3 / 4;
   grid-row: 1;
 
-  background-color: #85A9BD;
+  background-color: #384D8D;
  /* grid-auto-rows:    minmax(500px, auto);*/
 /*  grid-template-columns: minmax(auto, 50%) 1fr 3em;*/
 }
@@ -77,20 +90,51 @@ button {
 .picture {
   grid-column: 4 / 6;
   grid-row: 1 / 4;
-  background-image: url("images/Placeholder.png")
+  position: relative;
+  background-image: url("images/istanbul.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+/*  width: 100%;
+  height: auto;*/
+}
+
+
+.pic-menu {
+       position: absolute;
+    top: 2px;
+    left: 87%;
+} 
+.left,
+.right {
+  display: inline-block;
+  opacity: 0.5;
+  height: 6%;
+   
+
+}
+.left {
+         left: 3%;
+    top: 47%;
+    position: absolute;
+}
+.right {
+   
+      left: 85%;
+    top: 47%;
+    position: absolute;
 }
 
 .three-hotels {
   grid-column: 1 / 2;
   grid-row: 2;
-  background-color: #111F33;
+  background-color: #021127;
 
 }
 
 .four-restaurants {
   grid-column: 2 / 3;
   grid-row: 2;
-  background-color: #DBC9C2;
+  background-color: #DEC4C0;
 }
 
 .five-museums {
@@ -102,19 +146,19 @@ button {
 .six-attractions {
   grid-column: 1 / 2;
   grid-row: 3;
-  background-color: #C6D9DF;
+  background-color: #48728D;
 }
 
 .seven-excursions {
   grid-column: 2 / 3;
   grid-row: 3;
-  background-color: #111F33;
+  background-color: #021127;
 }
 
 .eight-history {
   grid-column: 3 / 4;
   grid-row: 3;
-  background-color: #C6D9DF;
+  background-color: #48728D;
 }
 
 
@@ -126,23 +170,49 @@ button {
 .icon-attractions,
 .icon-excursions,
 .icon-history {
-    display: block;
-    margin: 80px auto 10px;
+        display: block;
+    margin: 105px auto 10px;
 }
 
-.picture {
-  background-image: url("images/istanbul.jpg");
-  /*background-repeat: no-repeat;*/
-  background-position: center center
-   width: 100%;
-  height: auto;
-}
+
 
 .nine-empty{
   visibility: hidden;
 }
 
-@media screen and (max-width: 900px) {
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+h1 {
+      font-size: 1.9rem;
+    margin-top: 53px;
+    margin-bottom: 20px;
+    /* margin-right: 28px; */
+    padding-left: 30px;
+}
+p {
+        font-size: 1.1rem;
+    
+    margin-bottom: 18px;
+}
+
+button {
+  line-height: 1;
+}
+
+.map {
+      padding: 0.8rem 2.6rem;
+}
+
+.weather {
+  padding: 0.8rem 1.4rem;
+}
 
   .wrapper {
     display: grid;
@@ -163,6 +233,9 @@ button {
   .picture {
     grid-column: 3 / 5;
     grid-row: 1 / 4;
+  }
+  .pic-menu {
+        left: 82%;
   }
   
   .three-hotels {
@@ -198,7 +271,7 @@ button {
     visibility: visible;
     grid-column: 4 / 5;
     grid-row: 4 / 5;
-    background-color: red;
+    background-color: #DEC4C0;
   }
 }
 
